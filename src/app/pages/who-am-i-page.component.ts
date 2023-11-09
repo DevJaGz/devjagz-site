@@ -3,9 +3,13 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-who-am-i-page',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  template: `<router-outlet></router-outlet>`,
+  template: `
+    <div>
+      CENTER
+    </div>
+  `,
 })
-export class AppComponent {}
+export class WhoAmIPageComponent {}
