@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
@@ -6,11 +6,9 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-main-page',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  template: `
-    <div>
-      <h1>Hello, devjagz-portfolio</h1>
-      <router-outlet></router-outlet>
-    </div>
-  `,
+  templateUrl: './main-page.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class MainPageComponent {}
+export class MainPageComponent {
+
+}

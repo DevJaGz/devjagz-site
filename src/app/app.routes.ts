@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { MainPageComponent } from './pages/main-page.component';
+import { MainPageComponent } from '@pages';
 
 export const routes: Routes = [
   {
@@ -8,7 +8,7 @@ export const routes: Routes = [
     children: [
       {
         path: 'who-am-i',
-        loadComponent: () => import('./pages/who-am-i-page.component').then(c => c.WhoAmIPageComponent)
+        loadComponent: () => import('@pages').then(c => c.AboutPageComponent)
       }
     ]
   }
