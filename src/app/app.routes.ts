@@ -8,7 +8,7 @@ export const routes: Routes = [
     children: [
       {
         path: 'who-am-i',
-        loadComponent: () => import('@pages').then(c => c.AboutPageComponent)
+        loadComponent: () => import('@features').then(c => c.WhoAmIComponent)
       }
     ]
   }

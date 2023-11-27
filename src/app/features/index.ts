@@ -1,0 +1,1 @@
+export * from './who-am-i/who-am-i.component';
