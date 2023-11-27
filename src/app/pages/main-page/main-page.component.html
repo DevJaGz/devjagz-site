@@ -1,10 +1,10 @@
 <div class="bg-primary-200 text-primary-900 dark:bg-primary-900 dark:text-primary-400 h-full overflow-x-hidden">
   <div class="flex flex-nowrap h-full">
-    <main class="mx-auto max-w-5xl">
+    <main class="z-10 mx-auto max-w-5xl">
       <router-outlet></router-outlet>
     </main>
     <aside
-      class="flex justify-end fixed top-20 left-0 right-0 pr-24 translate-x-1/2 transition-transform duration-150 lg:translate-x-0 xl:transition-none 2xl:left-1/2 2xl:-translate-x-1/2 2xl:w-full 2xl:max-w-b2xl">
+      class="z-0 flex justify-end fixed top-20 left-0 right-0 pr-24 translate-x-1/2 transition-transform duration-150 lg:translate-x-0 xl:transition-none 2xl:left-1/2 2xl:-translate-x-1/2 2xl:w-full 2xl:max-w-b2xl">
       <app-nav-menu></app-nav-menu>
     </aside>
   </div>
