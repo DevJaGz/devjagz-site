@@ -1,6 +1,4 @@
 nav.nav-menu {
-  @apply relative left-[100vw] lg:left-0 transition-all duration-300 ;
-
   ul{
     @apply  flex flex-col gap-4 text-center;
   }
