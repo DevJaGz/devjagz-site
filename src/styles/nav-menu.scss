@@ -1,0 +1,14 @@
+nav.nav-menu {
+
+  a {
+    @apply text-gray-400 transition-colors;
+  }
+
+  a.active {
+    @apply  text-white cursor-auto;
+  }
+
+  a:not(.active) {
+    @apply cursor-pointer hover:opacity-80;
+  }
+}

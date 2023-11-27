@@ -1,13 +1,10 @@
 <div class="bg-primary-200 text-primary-900 dark:bg-primary-900 dark:text-primary-400 h-full">
   <div class="flex flex-nowrap h-full">
-    <aside class="outline outline-primary-400 w-60">
-        ASIDE LEFT
-    </aside>
-    <main class="flex-1">
+    <main class="mx-auto max-w-5xl">
       <router-outlet></router-outlet>
     </main>
-    <aside class="outline outline-primary-400 w-60">
-      ASIDE RIGHT
-  </aside>
+    <aside class="fixed top-20 right-24">
+      <app-nav-menu></app-nav-menu>
+    </aside>
   </div>
 </div>
