@@ -1,11 +1,16 @@
 nav.nav-menu {
+  @apply relative left-[100vw] lg:left-0 transition-all duration-300 ;
+
+  ul{
+    @apply  flex flex-col gap-4 text-center;
+  }
 
   a {
     @apply text-gray-400 transition-colors;
   }
 
   a.active {
-    @apply  text-white cursor-auto;
+    @apply  text-primary-200 cursor-auto;
   }
 
   a:not(.active) {
