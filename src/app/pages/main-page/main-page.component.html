@@ -1,7 +1,12 @@
 <div class="bg-primary-200 text-primary-900 dark:bg-primary-900 dark:text-primary-400 h-full overflow-x-hidden">
-  <div class="flex flex-nowrap h-full">
-    <main class="z-10 mx-auto max-w-5xl">
-      <router-outlet></router-outlet>
+  <div class="flex flex-nowrap h-full overflow-y-auto">
+    <main class="z-10 mx-auto max-w-5xl flex flex-col justify-between">
+      <div class="flex-1 pb-8">
+        <router-outlet></router-outlet>
+      </div>
+      <div class="sticky bottom-0 bg-gradient-to-t from-primary-900 from-50% via-primary-900 via-85%  to-primary-900/0 mask-bottom">
+        <app-profile-picture></app-profile-picture>
+      </div>
     </main>
     <aside
       class="z-0 flex justify-end fixed top-20 left-0 right-0 pr-24 translate-x-1/2 transition-transform duration-150 lg:translate-x-0 xl:transition-none 2xl:left-1/2 2xl:-translate-x-1/2 2xl:w-full 2xl:max-w-b2xl">
