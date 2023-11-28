@@ -1,9 +1,8 @@
 import { DOCUMENT } from '@angular/common';
-import { Inject, Injectable, Renderer2, RendererFactory2, signal } from '@angular/core';
-import { BrowserStorageService } from './browser-storage.service';
-import { BrowserMatchMediaService } from './browser-match-media.service';
+import { Inject, Injectable, Renderer2, RendererFactory2 } from '@angular/core';
 import { combineLatest } from 'rxjs';
-import { ThemeType } from '../enums/theme.enum';
+import { BrowserStorageService, BrowserMatchMediaService } from '@services';
+import { ThemeType } from '@enums';
 
 @Injectable({ providedIn: 'root' })
 export class ThemeService {

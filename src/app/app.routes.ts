@@ -10,6 +10,10 @@ export const routes: Routes = [
         path: 'who-am-i',
         loadComponent: () => import('@features').then(c => c.WhoAmIComponent)
       }
-    ]
+    ],
+  },
+  {
+    path: '**',
+    redirectTo: '',
   }
 ];

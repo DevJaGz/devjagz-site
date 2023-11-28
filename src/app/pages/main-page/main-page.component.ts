@@ -1,8 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { NavMenuComponent } from '../../components/nav-menu/nav-menu.component';
-import { ProfilePictureComponent } from '../../components/profile-picture/profile-picture.component';
+import { NavMenuComponent, ProfilePictureComponent } from '@components';
 
 @Component({
   selector: 'app-main-page',

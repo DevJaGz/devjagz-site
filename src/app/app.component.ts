@@ -1,7 +1,8 @@
 import { Component, afterNextRender  } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { ThemeService } from './services/theme.service';
+import { ThemeService } from '@services';
+
 
 @Component({
   selector: 'app-root',
