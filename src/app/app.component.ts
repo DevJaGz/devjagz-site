@@ -1,4 +1,4 @@
-import { Component, OnInit, afterRender } from '@angular/core';
+import { Component, afterNextRender  } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { ThemeService } from './services/theme.service';
@@ -11,7 +11,7 @@ import { ThemeService } from './services/theme.service';
 })
 export class AppComponent {
   constructor(private _themeService: ThemeService) {
-    afterRender(() => {
+    afterNextRender(() => {
       this._themeService.handleInitialTheme();
     });
   }
