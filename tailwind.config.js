@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      minWidth:{
+        'b2xl': '1536px',
+      },
       maxWidth: {
         'b2xl': '1536px',
       },
