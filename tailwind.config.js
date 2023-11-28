@@ -32,9 +32,6 @@ module.exports = {
           900: '#7f120f',
           950: '#450506',
         }
-      },
-      boxShadow:{
-        'top-mask': '0px -10px 0px 0px rgba(0,0,0,0.5)',
       }
     },
   },
