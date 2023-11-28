@@ -4,11 +4,11 @@ nav.nav-menu {
   }
 
   a {
-    @apply text-gray-400 transition-colors;
+    @apply text-gray-400 transition-colors select-none;
   }
 
   a.active {
-    @apply  text-primary-200 cursor-auto;
+    @apply  text-primary-200 cursor-default;
   }
 
   a:not(.active) {
