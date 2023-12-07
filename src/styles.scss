@@ -65,6 +65,11 @@ html, body {
     mask: linear-gradient(to bottom, transparent, white 25%);
   }
 
+  .--mask-bottom{
+    -webkit-mask: linear-gradient(to top, transparent, white 25%);
+    mask: linear-gradient(to top, transparent, white 25%);
+  }
+
   .nav-limit-query{
     @media screen and (min-width: 1536px) {
       right: calc((100vw - 1536px) / 2) !important;
