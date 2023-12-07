@@ -1,17 +1,13 @@
-<div class="relative bg-primary-200 dark:bg-primary-900 text-primary-900 0 dark:text-primary-400 h-full overflow-y-auto overflow-x-hidden">
+<div class="relative bg-primary-200 dark:bg-primary-900 text-primary-900 0 dark:text-primary-400 h-full min-h-[100svh] overflow-y-auto overflow-x-hidden">
   <div class="h-full max-w-b2xl w-full mx-auto ">
     <main class="h-full z-10 mx-auto max-w-5xl flex flex-col justify-between">
       <div class="flex-1 pb-8">
         <router-outlet></router-outlet>
       </div>
-      <div
-        class="sticky bottom-0">
-        <div class="absolute inset-0 bg-primary-200 dark:bg-primary-900 --mask-top"></div>
-        <app-profile-picture class="relative left-14" />
-      </div>
+      <app-profile-picture class="sticky bottom-0" />
     </main>
     <aside class="fixed right-24 top-20 translate-x-52 lg:translate-x-0 nav-limit-query transition-transform duration-150">
-      <app-nav-menu></app-nav-menu>
+      <app-nav-menu />
     </aside>
   </div>
 </div>
