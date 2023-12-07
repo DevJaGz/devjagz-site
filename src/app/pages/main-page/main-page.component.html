@@ -5,8 +5,9 @@
         <router-outlet></router-outlet>
       </div>
       <div
-        class="sticky bottom-0 bg-gradient-to-t from-primary-200 dark:from-primary-900 from-50% via-primary-200 dark:via-primary-900 via-80%  to-primary-200/0 dark:to-primary-900/0 mask-bottom drop-t-shadow">
-        <app-profile-picture class="relative left-14"></app-profile-picture>
+        class="sticky bottom-0">
+        <div class="absolute inset-0 bg-primary-900 --mask-top"></div>
+        <app-profile-picture class="relative left-14" />
       </div>
     </main>
     <aside class="fixed right-24 top-20 translate-x-52 lg:translate-x-0 nav-limit-query transition-transform duration-150">
