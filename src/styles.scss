@@ -70,6 +70,10 @@ html, body {
     mask: linear-gradient(to top, transparent, white 25%);
   }
 
+  .--text-highlight{
+    @apply text-zinc-600 dark:text-zinc-300 font-semibold dark:font-normal
+  }
+
   .nav-limit-query{
     @media screen and (min-width: 1536px) {
       right: calc((100vw - 1536px) / 2) !important;
