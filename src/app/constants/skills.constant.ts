@@ -36,5 +36,11 @@ export const SKILLS: Skills = [
     label: 'Sass',
     link: 'https://sass-lang.com/',
     class: 'p-1'
+  },
+  {
+    image: 'assets/images/webp/bootstrap.webp',
+    label: 'Bootstrap',
+    link: 'https://getbootstrap.com/',
+    class: ''
   }
 ]
