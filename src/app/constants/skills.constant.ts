@@ -112,5 +112,11 @@ export const ADDITIONAL_SKILLS: Skills = [
     link: 'https://www.electronjs.org/',
     class: 'p-1'
   },
+  {
+    image: 'assets/images/webp/django.webp',
+    label: 'Django',
+    link: 'https://www.djangoproject.com/',
+    class: 'p-[6px]'
+  }
 
 ]
