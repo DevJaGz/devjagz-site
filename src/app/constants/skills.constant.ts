@@ -165,6 +165,12 @@ export const ADDITIONAL_SKILLS: Skills = [
     label: 'MySQL',
     link: 'https://www.mysql.com/',
     class: 'p-1'
+  },
+  {
+    image: 'assets/images/webp/sqlite.webp',
+    label: 'SQLite',
+    link: 'https://www.sqlite.org/',
+    class: 'p-2'
   }
 
 ]
