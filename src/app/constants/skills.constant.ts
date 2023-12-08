@@ -44,6 +44,12 @@ export const SKILLS: Skills = [
     class: 'p-1'
   },
   {
+    image: 'assets/images/webp/primeng.webp',
+    label: 'PrimeNG',
+    link: 'https://www.primefaces.org/primeng/',
+    class: 'p-1'
+  },
+  {
     image: 'assets/images/webp/bootstrap.webp',
     label: 'Bootstrap',
     link: 'https://getbootstrap.com/',
