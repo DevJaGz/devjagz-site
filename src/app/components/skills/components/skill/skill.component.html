@@ -1,19 +1,34 @@
-<a class="flex flex-col gap-1 items-center animate-fade-up group" [href]="skillLink" rel="noopener noreferrer" target="_blank">
+<a
+  class="flex flex-col gap-1 items-center animate-fade-up group"
+  [href]="skillLink"
+  rel="noopener noreferrer"
+  target="_blank"
+>
   @defer {
-  <img
-    width="40"
-    height="40"
-    class="rounded-full w-10 h-10 bg-white object-contain  animate-jump relative group-hover:animate-rotate-y transition-transform"
+  <figure
+    class="grid place-items-center overflow-hidden rounded-full w-10 h-10 bg-white animate-jump relative group-hover:animate-rotate-y transition-transform"
     [class]="skillClass"
-    [src]="skillImage"
-    alt="logo-{{skillName}}"
-  />
+  >
+    <img
+      width="40"
+      height="40"
+      class="w-full h-full object-contain"
+      [src]="skillImage"
+      alt="logo-{{ skillName }}"
+    />
+  </figure>
+  } @placeholder {
+  <div
+    class="rounded-full bg-white w-10 h-10 animate-pulse animate-infinite animate-duration-1000"
+  ></div>
+  } @loading {
+  <div
+    class="rounded-full bg-white w-10 h-10 animate-pulse animate-infinite animate-duration-1000"
+  ></div>
   }
-  @placeholder {
-    <div class="rounded-full bg-white w-10 h-10 animate-pulse animate-infinite animate-duration-1000"></div>
-  }
-  @loading {
-    <div class="rounded-full bg-white w-10 h-10 animate-pulse animate-infinite animate-duration-1000"></div>
-  }
-  <blockquote class="text-sm text-center group-hover:text-white transition-colors">{{skillName}}</blockquote>
+  <blockquote
+    class="text-sm text-center group-hover:text-white transition-colors"
+  >
+    {{ skillName }}
+  </blockquote>
 </a>

@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { SkillsComponent } from '@components';
+import { SKILLS, ADDITIONAL_SKILLS } from '@constants';
 @Component({
   selector: 'app-profile-skills',
   standalone: true,
@@ -9,4 +10,7 @@ import { SkillsComponent } from '@components';
   templateUrl: './profile-skills.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ProfileSkillsComponent {}
+export class ProfileSkillsComponent {
+  skills = signal(SKILLS);
+  additionalSkills = signal(ADDITIONAL_SKILLS);
+}

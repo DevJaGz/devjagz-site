@@ -71,6 +71,15 @@ export const SKILLS: Skills = [
     image: 'assets/images/webp/material.webp',
     label: 'Material',
     link: 'https://material.angular.io/',
-    class: 'p-1'
+    class: 'p-[6px]'
+  }
+]
+
+export const ADDITIONAL_SKILLS: Skills = [
+  {
+    image: 'assets/images/webp/vue.webp',
+    label: 'Vue',
+    link: 'https://vuejs.org/',
+    class: 'p-[6px] pt-2'
   }
 ]

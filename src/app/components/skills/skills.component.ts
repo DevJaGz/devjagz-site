@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component, Input, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { SkillComponent } from './components/skill/skill.component';
-import { SKILLS } from '../../constants/skills.constant';
+import { Skills } from '@interfaces';
 
 @Component({
   selector: 'app-skills',
@@ -13,8 +13,9 @@ import { SKILLS } from '../../constants/skills.constant';
 })
 export class SkillsComponent {
 
-  @Input()
+  @Input({required: true})
   titleLabel = '';
 
-  skills = signal(SKILLS);
+  @Input({required: true})
+  skills: Skills = [];
 }
