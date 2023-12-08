@@ -153,6 +153,12 @@ export const ADDITIONAL_SKILLS: Skills = [
     label: 'C#',
     link: 'https://docs.microsoft.com/en-us/dotnet/csharp/',
     class: 'py[6px] px-[4px]'
+  },
+  {
+    image: 'assets/images/webp/netcore.webp',
+    label: '.NET Core',
+    link: 'https://dotnet.microsoft.com/',
+    class: 'p-1'
   }
 
 ]
