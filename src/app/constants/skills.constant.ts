@@ -129,6 +129,12 @@ export const ADDITIONAL_SKILLS: Skills = [
     label: 'Arduino',
     link: 'https://www.arduino.cc/',
     class: 'p-1'
+  },
+  {
+    image: 'assets/images/webp/matlab.webp',
+    label: 'Matlab',
+    link: 'https://www.mathworks.com/products/matlab.html',
+    class: 'p-[6px]'
   }
 
 ]
