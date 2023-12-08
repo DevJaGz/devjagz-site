@@ -1,9 +1,9 @@
-<figure class="flex flex-col gap-1 items-center animate-fade-up">
+<a class="flex flex-col gap-1 items-center animate-fade-up group" [href]="skillLink" rel="noopener noreferrer" target="_blank">
   @defer {
   <img
     width="40"
     height="40"
-    class="rounded-full w-10 h-10 bg-white object-cover animate-delay-300 animate-jump"
+    class="rounded-full w-10 h-10 bg-white object-cover  animate-jump relative group-hover:animate-rotate-y transition-transform"
     [class]="skillClass"
     [src]="skillImage"
     alt="logo-{{skillName}}"
@@ -15,5 +15,5 @@
   @loading {
     <div class="rounded-full bg-white w-10 h-10 animate-pulse animate-infinite animate-duration-1000"></div>
   }
-  <blockquote class="text-sm text-center">{{skillName}}</blockquote>
-</figure>
+  <blockquote class="text-sm text-center group-hover:text-white transition-colors">{{skillName}}</blockquote>
+</a>
