@@ -84,6 +84,12 @@ export const SKILLS: Skills = [
     label: 'Material',
     link: 'https://material.angular.io/',
     class: 'p-[6px]'
+  },
+  {
+    image: 'assets/images/webp/git.webp',
+    label: 'Git',
+    link: 'https://git-scm.com/',
+    class: 'p-[6px]'
   }
 ]
 
@@ -140,7 +146,7 @@ export const ADDITIONAL_SKILLS: Skills = [
     image: 'assets/images/webp/raspberry.webp',
     label: 'Raspberry Pi',
     link: 'https://www.raspberrypi.org/',
-    class: 'pb-3 pt-[6px] px-2'
+    class: 'pb-[10px] pt-[4px] px-[8px]'
   }
 
 ]
