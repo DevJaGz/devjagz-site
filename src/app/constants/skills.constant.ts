@@ -32,6 +32,12 @@ export const SKILLS: Skills = [
     class: 'p-[6px]'
   },
   {
+    image: 'assets/images/webp/tensorflow.webp',
+    label: 'Tensorflow',
+    link: 'https://www.tensorflow.org/',
+    class: 'p-2 pb-3'
+  },
+  {
     image: 'assets/images/webp/docker.webp',
     label: 'Docker',
     link: 'https://www.docker.com/',
@@ -99,12 +105,6 @@ export const ADDITIONAL_SKILLS: Skills = [
     label: 'MongoDB',
     link: 'https://www.mongodb.com/',
     class: 'p-1 pl-[6px]'
-  },
-  {
-    image: 'assets/images/webp/tensorflow.webp',
-    label: 'Tensorflow',
-    link: 'https://www.tensorflow.org/',
-    class: 'p-2 pb-3'
   },
   {
     image: 'assets/images/webp/electron.webp',
