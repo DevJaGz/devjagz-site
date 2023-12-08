@@ -98,7 +98,7 @@ export const ADDITIONAL_SKILLS: Skills = [
     image: 'assets/images/webp/react.webp',
     label: 'React js',
     link: 'https://react.dev/',
-    class: 'p-[6px] '
+    class: 'p-1 '
   },
   {
     image: 'assets/images/webp/mongo.webp',
@@ -117,6 +117,12 @@ export const ADDITIONAL_SKILLS: Skills = [
     label: 'Django',
     link: 'https://www.djangoproject.com/',
     class: 'p-2'
+  },
+  {
+    image: 'assets/images/webp/graphql.webp',
+    label: 'GraphQL',
+    link: 'https://graphql.org/',
+    class: 'p-1'
   }
 
 ]
