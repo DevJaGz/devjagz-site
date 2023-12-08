@@ -171,6 +171,12 @@ export const ADDITIONAL_SKILLS: Skills = [
     label: 'SQLite',
     link: 'https://www.sqlite.org/',
     class: 'p-2'
+  },
+  {
+    image: 'assets/images/webp/postgres.webp',
+    label: 'PostgreSQL',
+    link: 'https://www.postgresql.org/',
+    class: 'p-[6px]'
   }
 
 ]
