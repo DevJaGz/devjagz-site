@@ -86,7 +86,7 @@ html, body {
   .--reveal-both{
     animation: reveal linear both;
     animation-timeline: view();
-    animation-range:  0%   40%;
+    animation-range:  0% cover 35%;
   }
   
 }
