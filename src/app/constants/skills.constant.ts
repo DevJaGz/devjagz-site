@@ -159,6 +159,12 @@ export const ADDITIONAL_SKILLS: Skills = [
     label: '.NET Core',
     link: 'https://dotnet.microsoft.com/',
     class: 'p-1'
+  },
+  {
+    image: 'assets/images/webp/mysql.webp',
+    label: 'MySQL',
+    link: 'https://www.mysql.com/',
+    class: 'p-1'
   }
 
 ]
