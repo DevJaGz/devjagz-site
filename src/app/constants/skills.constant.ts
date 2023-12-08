@@ -20,6 +20,12 @@ export const SKILLS: Skills = [
     class: 'p-1'
   },
   {
+    image: 'assets/images/webp/express.webp',
+    label: 'Express js',
+    link: 'https://expressjs.com/',
+    class: 'p-2'
+  },
+  {
     image: 'assets/images/webp/docker.webp',
     label: 'Docker',
     link: 'https://www.docker.com/',
@@ -32,10 +38,16 @@ export const SKILLS: Skills = [
     class: 'p-1'
   },
   {
+    image: 'assets/images/webp/figma.webp',
+    label: 'Figma',
+    link: 'https://www.figma.com/',
+    class: 'p-[6px]'
+  },
+  {
     image: 'assets/images/webp/tailwind.webp',
     label: 'Tailwind css',
     link: 'https://tailwindcss.com/',
-    class: 'p-1'
+    class: 'p-1 px-[6px]'
   },
   {
     image: 'assets/images/webp/sass.webp',
