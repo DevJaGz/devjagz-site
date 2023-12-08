@@ -23,6 +23,6 @@ export const SKILLS: Skills = [
     image: 'assets/images/webp/tailwind.webp',
     label: 'Tailwind css',
     link: 'https://tailwindcss.com/',
-    class: 'p-2'
+    class: 'p-1'
   }
 ]
