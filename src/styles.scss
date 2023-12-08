@@ -7,6 +7,7 @@
 
 
 @import 'nav-menu';
+@import 'animations';
 
 html, body {
   height: 100%;
@@ -80,5 +81,13 @@ html, body {
       @apply pr-24
     }
   }
+
+
+  .--reveal-both{
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range:  0%   40%;
+  }
+  
 }
 
