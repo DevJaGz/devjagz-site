@@ -1,4 +1,18 @@
-<figure class="flex flex-col gap-1 items-center">
-  <img class="rounded-full w-10 h-10 bg-white object-cover " src="assets/images/webp/angular.webp" alt="logo">
+<figure class="flex flex-col gap-1 items-center animate-fade-up">
+  @defer {
+  <img
+    width="40"
+    height="40"
+    class="rounded-full w-10 h-10 bg-white object-cover animate-delay-300 animate-jump "
+    src="assets/images/webp/angular.webp"
+    alt="logo"
+  />
+  }
+  @placeholder {
+    <div class="rounded-full bg-white w-10 h-10 animate-pulse animate-infinite animate-duration-1000"></div>
+  }
+  @loading {
+    <div class="rounded-full bg-white w-10 h-10 animate-pulse animate-infinite animate-duration-1000"></div>
+  }
   <blockquote class="text-sm">Angular</blockquote>
 </figure>
