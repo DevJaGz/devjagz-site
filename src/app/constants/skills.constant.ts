@@ -18,5 +18,11 @@ export const SKILLS: Skills = [
     label: 'Node js',
     link: 'https://nodejs.org/',
     class: 'p-1'
+  },
+  {
+    image: 'assets/images/webp/tailwind.webp',
+    label: 'Tailwind css',
+    link: 'https://tailwindcss.com/',
+    class: 'p-2'
   }
 ]
