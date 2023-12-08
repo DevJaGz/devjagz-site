@@ -123,6 +123,12 @@ export const ADDITIONAL_SKILLS: Skills = [
     label: 'GraphQL',
     link: 'https://graphql.org/',
     class: 'p-1'
+  },
+  {
+    image: 'assets/images/webp/arduino.webp',
+    label: 'Arduino',
+    link: 'https://www.arduino.cc/',
+    class: 'p-1'
   }
 
 ]
