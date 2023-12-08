@@ -101,6 +101,12 @@ export const ADDITIONAL_SKILLS: Skills = [
     class: 'p-1 pl-[6px]'
   },
   {
+    image: 'assets/images/webp/tensorflow.webp',
+    label: 'Tensorflow',
+    link: 'https://www.tensorflow.org/',
+    class: 'p-2 pb-3'
+  },
+  {
     image: 'assets/images/webp/electron.webp',
     label: 'Electron js',
     link: 'https://www.electronjs.org/',
