@@ -78,8 +78,14 @@ export const SKILLS: Skills = [
 export const ADDITIONAL_SKILLS: Skills = [
   {
     image: 'assets/images/webp/vue.webp',
-    label: 'Vue',
+    label: 'Vue js',
     link: 'https://vuejs.org/',
     class: 'p-[6px] pt-2'
+  },
+  {
+    image: 'assets/images/webp/react.webp',
+    label: 'React js',
+    link: 'https://react.dev/',
+    class: 'p-[6px] '
   }
 ]
