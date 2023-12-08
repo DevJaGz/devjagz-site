@@ -135,6 +135,12 @@ export const ADDITIONAL_SKILLS: Skills = [
     label: 'Matlab',
     link: 'https://www.mathworks.com/products/matlab.html',
     class: 'p-[6px]'
+  },
+  {
+    image: 'assets/images/webp/raspberry.webp',
+    label: 'Raspberry Pi',
+    link: 'https://www.raspberrypi.org/',
+    class: 'pb-3 pt-[6px] px-2'
   }
 
 ]
