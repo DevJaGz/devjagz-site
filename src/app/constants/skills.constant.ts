@@ -20,15 +20,21 @@ export const SKILLS: Skills = [
     class: 'p-1'
   },
   {
-    image: 'assets/images/webp/tailwind.webp',
-    label: 'Tailwind css',
-    link: 'https://tailwindcss.com/',
-    class: 'p-1'
+    image: 'assets/images/webp/docker.webp',
+    label: 'Docker',
+    link: 'https://www.docker.com/',
+    class: 'pl-[6px] pr-1 py-1'
   },
   {
     image: 'assets/images/webp/ngrx.webp',
     label: 'NgRx',
     link: 'https://ngrx.io/',
+    class: 'p-1'
+  },
+  {
+    image: 'assets/images/webp/tailwind.webp',
+    label: 'Tailwind css',
+    link: 'https://tailwindcss.com/',
     class: 'p-1'
   },
   {
