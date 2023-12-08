@@ -87,5 +87,11 @@ export const ADDITIONAL_SKILLS: Skills = [
     label: 'React js',
     link: 'https://react.dev/',
     class: 'p-[6px] '
+  },
+  {
+    image: 'assets/images/webp/electron.webp',
+    label: 'Electron js',
+    link: 'https://www.electronjs.org/',
+    class: 'p-1'
   }
 ]
