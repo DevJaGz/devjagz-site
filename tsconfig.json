@@ -38,6 +38,12 @@
       ],
       "@services": [
         "./src/app/services"
+      ],
+      "@constants": [
+        "./src/app/constants"
+      ],
+      "@interfaces": [
+        "./src/app/interfaces"
       ]
     }
   },

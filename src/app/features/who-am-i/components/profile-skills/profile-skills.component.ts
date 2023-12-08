@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { SkillsComponent } from '../../../../components/skills/skills.component';
-
+import { SkillsComponent } from '@components';
 @Component({
   selector: 'app-profile-skills',
   standalone: true,
