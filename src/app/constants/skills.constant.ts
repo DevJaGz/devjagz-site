@@ -116,7 +116,7 @@ export const ADDITIONAL_SKILLS: Skills = [
     image: 'assets/images/webp/django.webp',
     label: 'Django',
     link: 'https://www.djangoproject.com/',
-    class: 'p-[6px]'
+    class: 'p-2'
   }
 
 ]
