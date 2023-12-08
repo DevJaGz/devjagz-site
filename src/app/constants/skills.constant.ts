@@ -24,5 +24,17 @@ export const SKILLS: Skills = [
     label: 'Tailwind css',
     link: 'https://tailwindcss.com/',
     class: 'p-1'
+  },
+  {
+    image: 'assets/images/webp/ngrx.webp',
+    label: 'NgRx',
+    link: 'https://ngrx.io/',
+    class: 'p-1'
+  },
+  {
+    image: 'assets/images/webp/sass.webp',
+    label: 'Sass',
+    link: 'https://sass-lang.com/',
+    class: 'p-1'
   }
 ]
