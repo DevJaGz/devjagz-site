@@ -147,6 +147,12 @@ export const ADDITIONAL_SKILLS: Skills = [
     label: 'Raspberry Pi',
     link: 'https://www.raspberrypi.org/',
     class: 'pb-[10px] pt-[4px] px-[8px]'
+  },
+  {
+    image: 'assets/images/webp/csharp.webp',
+    label: 'C#',
+    link: 'https://docs.microsoft.com/en-us/dotnet/csharp/',
+    class: 'py[6px] px-[4px]'
   }
 
 ]
