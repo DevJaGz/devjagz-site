@@ -89,9 +89,16 @@ export const ADDITIONAL_SKILLS: Skills = [
     class: 'p-[6px] '
   },
   {
+    image: 'assets/images/webp/mongo.webp',
+    label: 'MongoDB',
+    link: 'https://www.mongodb.com/',
+    class: 'p-1 pl-[6px]'
+  },
+  {
     image: 'assets/images/webp/electron.webp',
     label: 'Electron js',
     link: 'https://www.electronjs.org/',
     class: 'p-1'
-  }
+  },
+
 ]
