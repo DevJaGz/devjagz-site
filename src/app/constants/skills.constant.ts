@@ -54,5 +54,11 @@ export const SKILLS: Skills = [
     label: 'Bootstrap',
     link: 'https://getbootstrap.com/',
     class: ''
+  },
+  {
+    image: 'assets/images/webp/material.webp',
+    label: 'Material',
+    link: 'https://material.angular.io/',
+    class: 'p-1'
   }
 ]
