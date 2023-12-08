@@ -26,6 +26,12 @@ export const SKILLS: Skills = [
     class: 'p-2'
   },
   {
+    image: 'assets/images/webp/python.webp',
+    label: 'Python',
+    link: 'https://www.python.org/',
+    class: 'p-[6px]'
+  },
+  {
     image: 'assets/images/webp/docker.webp',
     label: 'Docker',
     link: 'https://www.docker.com/',
@@ -58,7 +64,7 @@ export const SKILLS: Skills = [
   {
     image: 'assets/images/webp/primeng.webp',
     label: 'PrimeNG',
-    link: 'https://www.primefaces.org/primeng/',
+    link: 'https://primeng.org/',
     class: 'p-1'
   },
   {
