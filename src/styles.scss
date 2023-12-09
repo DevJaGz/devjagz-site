@@ -89,6 +89,25 @@ html, body {
     animation-range:  0% cover 35%;
   }
 
+  .--spoken-message{
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      $size: 0.75rem;
+      left: -$size*0.5;
+      width: $size;
+      height: $size;
+      background-color: theme('colors.primary.300');
+      clip-path: polygon(0 0, 100% 0, 100% 100%);
+    }
+  }
+
+  .dark .--spoken-message::before{
+    background-color: theme('colors.primary.700');
+  }
+
   .--show-spoken-message{
     animation: show-spoken-message  1s ease both;
   }
