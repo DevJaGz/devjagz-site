@@ -7,7 +7,11 @@ export class URLSpokenMessageService {
       case '/who-am-i':
         return 'Who am I?';
       case '/experience':
-        return 'My experience, hours of work!';
+        return 'My experience!';
+      case '/resume':
+        return 'Download it!';
+      case '/contact':
+        return 'Let\'s talk!';
       default:
         return '';
     }

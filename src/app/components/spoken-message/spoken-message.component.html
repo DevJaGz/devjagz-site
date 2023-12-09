@@ -4,5 +4,5 @@ class="bg-primary-700 dark:text-white p-3 rounded-r-lg rounded-bl-lg min-h-[48px
   [class.--hide-spoken-message]="!isShow"
   [class.--initial-spoken-message]="isInitial || !message"
 >
-  <span appReplaceTextAnimation [ignoreAnimation]="isInitial" class="--replace-text-animation"> {{ message }}</span>
+  <span appReplaceTextAnimation [ignoreAnimation]="isInitial"> {{ message }}</span>
 </p>

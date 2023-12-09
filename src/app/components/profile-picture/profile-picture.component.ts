@@ -26,13 +26,8 @@ export class ProfilePictureComponent implements OnInit {
   private _listenRouteChanges(): void {
     this._navigationService.urlChanges$.subscribe({
       next: (url) => {
-        // if (url){
-        //   const message = this._URLSpokenMessageService.getMessageBasedOnURLPath(url);
-        //   this._spokenMessageService.showMessage(message);
-        //   return;
-        // }
-        const message = this._URLSpokenMessageService.getMessageBasedOnURLPath(url);
-        if (message){
+        if (url){
+          const message = this._URLSpokenMessageService.getMessageBasedOnURLPath(url);
           this._spokenMessageService.showMessage(message);
           return;
         }
