@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'lg': '1164px',
+      },
       minWidth:{
         'b2xl': '1536px',
       },
