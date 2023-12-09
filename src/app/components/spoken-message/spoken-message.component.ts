@@ -1,4 +1,4 @@
-  import { ChangeDetectionStrategy, Component, effect, inject } from '@angular/core';
+  import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { SpokenMessageService } from '../../services/spoken-message.service';
 import { CommonModule } from '@angular/common';
 import { ReplaceTextAnimationDirective } from '../../directives';
@@ -13,12 +13,6 @@ import { ReplaceTextAnimationDirective } from '../../directives';
 export class SpokenMessageComponent  {
   private readonly _spokenMessageService = inject(SpokenMessageService);
   private _event = this._spokenMessageService.event;
-
-  constructor(){
-    effect(() => {
-      console.log('event change', this._event());
-    });
-  }
 
   private get eventState(): string {
     return this._event().state;

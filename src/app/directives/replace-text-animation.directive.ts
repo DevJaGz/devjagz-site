@@ -27,7 +27,6 @@ export class ReplaceTextAnimationDirective implements OnDestroy {
       this._renderer.addClass(this._elementRef.nativeElement, '--replace-text');
       const observer = new MutationObserver((mutationsList) => {
         if (this.ignoreAnimation) {
-          console.log('ignore animation');
           return;
         }
         for (const mutation of mutationsList) {

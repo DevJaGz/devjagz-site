@@ -29,9 +29,6 @@ export class ThemeService {
         this._handleTheme(themeType);
         // Save the theme in local storage
         this._saveThemeInStorage(themeType);
-      },
-      complete: () => {
-        console.log('ThemeService.handleTheme() completed');
       }
     });
   }
