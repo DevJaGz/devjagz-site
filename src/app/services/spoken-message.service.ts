@@ -19,14 +19,16 @@ export class SpokenMessageService {
     return this._event.asReadonly();
   }
 
-  showMessage(message: string | TemplateRef<unknown>, remember = false): void {
+  // private _showTimeout: ReturnType<typeof setTimeout> | undefined;
+
+  showMessage(message: string | TemplateRef<unknown>, rememberEvent = false): void {
     if (typeof message === 'string') {
       this._event.set({
         state: 'show',
         message,
       });
-      if (remember){
-        this._handleRemember();
+      if (rememberEvent){
+        this._handleRememberEvent();
       }
       return;
     }
@@ -41,7 +43,7 @@ export class SpokenMessageService {
     this._event.update((event) => ({ ...event, state: 'hide' }));
   }
 
-  private _handleRemember(): void {
+  private _handleRememberEvent(): void {
     this._lastEventRemembered.set(structuredClone(this._event()));
   }
 }
