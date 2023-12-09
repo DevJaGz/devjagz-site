@@ -83,18 +83,18 @@ html, body {
   }
 
 
-  .--reveal-both{
+  .--reveal-on-view-both{
     animation: reveal linear both;
     animation-timeline: view();
     animation-range:  0% cover 35%;
   }
 
   .--show-spoken-message{
-    animation: showSpokenMessage  0.2s ease-out forwards;
+    animation: show-spoken-message  1s ease both;
   }
   
   .--hide-spoken-message{
-    animation: hideSpokenMessage  0.2s ease-out forwards;
+    animation: hide-spoken-message  1s ease both;
   }
 
 }
