@@ -9,6 +9,10 @@ export const routes: Routes = [
       {
         path: 'who-am-i',
         loadComponent: () => import('@features').then(c => c.WhoAmIComponent)
+      },
+      {
+        path: 'experience',
+        loadComponent: () => import('@features').then(c => c.ExperienceComponent)
       }
     ],
   },
