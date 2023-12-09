@@ -1,8 +1,8 @@
 <p
-class="bg-primary-700 dark:text-white p-3 rounded-r-lg rounded-bl-lg min-h-[48px] "
+class="bg-primary-700 dark:text-white p-3 rounded-r-lg rounded-bl-lg min-h-[48px]"
   [class.--show-spoken-message]="isShow"
   [class.--hide-spoken-message]="!isShow"
-  [class.--initial-spoken-message]="isInitial"
+  [class.--initial-spoken-message]="isInitial || !message"
 >
   <span appReplaceTextAnimation [ignoreAnimation]="isInitial" class="--replace-text-animation"> {{ message }}</span>
 </p>
