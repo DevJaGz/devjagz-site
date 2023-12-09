@@ -1,11 +1,12 @@
   import { ChangeDetectionStrategy, Component, effect, inject } from '@angular/core';
 import { SpokenMessageService } from '../../services/spoken-message.service';
 import { CommonModule } from '@angular/common';
+import { ReplaceTextAnimationDirective } from '../../directives';
 
 @Component({
   selector: 'app-spoken-message',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ReplaceTextAnimationDirective],
   templateUrl: './spoken-message.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })

@@ -1,0 +1,1 @@
+export * from './replace-text-animation.directive';
