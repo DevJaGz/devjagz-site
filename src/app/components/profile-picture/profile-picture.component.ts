@@ -28,7 +28,7 @@ export class ProfilePictureComponent implements OnInit {
       next: (url) => {
         if (url){
           const message = this._URLSpokenMessageService.getMessageBasedOnURLPath(url);
-          this._spokenMessageService.showMessage(message);
+          this._spokenMessageService.showMessage(message, true);
           return;
         }
         this._spokenMessageService.hideMessage();

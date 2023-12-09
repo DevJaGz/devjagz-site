@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostListener, Input, inject } from '@angular/core';
 import { Skill } from '@interfaces';
+import { SpokenMessageService } from '@services';
 
 @Component({
   selector: 'app-skill',
@@ -9,6 +10,7 @@ import { Skill } from '@interfaces';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SkillComponent {
+  private readonly _spokenMessageService = inject(SpokenMessageService);
 
   @Input({ required: true })
   skill!: Skill;
@@ -29,4 +31,13 @@ export class SkillComponent {
     return this.skill.class;
   }
 
+  @HostListener('mouseover')
+  onMouseOver(): void {
+    this._spokenMessageService.showMessage(this.skillName);
+  }
+
+  @HostListener('mouseleave')
+  onMouseLeave(): void {
+    this._spokenMessageService.showLastMessage();
+  }
 }

@@ -1,51 +1,47 @@
-import { Injectable, Signal, TemplateRef, computed, signal } from '@angular/core';
+import {
+  Injectable,
+  Signal,
+  TemplateRef,
+  signal,
+} from '@angular/core';
 import { SpokenMessageEvent } from '@interfaces';
-
-
+import { INITIAL_SPOKEN_MESSAGE_EVENT } from '@constants';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SpokenMessageService {
-  private _event = signal<SpokenMessageEvent>({
-    state: 'initial'
-  });
-  private _lastEvent = computed(() => this._event);
+  private _event = signal<SpokenMessageEvent>(INITIAL_SPOKEN_MESSAGE_EVENT);
 
-  private get _lastEventValue(): SpokenMessageEvent {
-    return this._lastEvent()();
-  }
+  private _lastEventRemembered = signal<SpokenMessageEvent>(INITIAL_SPOKEN_MESSAGE_EVENT);
 
   get event(): Signal<SpokenMessageEvent> {
     return this._event.asReadonly();
   }
 
-  showMessage(message: string | TemplateRef<unknown>): void {
+  showMessage(message: string | TemplateRef<unknown>, remember = false): void {
     if (typeof message === 'string') {
-      this._event.set({ 
+      this._event.set({
         state: 'show',
-        message 
+        message,
       });
+      if (remember){
+        this._handleRemember();
+      }
       return;
     }
-    this._event.set({ 
-      state: 'show',
-      templateMessage: message 
-    });
+    throw new Error('TemplateRef Not implemented');
   }
 
   showLastMessage(): void {
-    this._event.set({
-      ...this._lastEventValue,
-      state: 'show-last'
-    });
+    this._event.set({ ...this._lastEventRemembered(), state: 'show-last' })
   }
 
   hideMessage(): void {
-    this._event.set({
-      ...this._lastEventValue,
-      state: 'hide'
-    });
+    this._event.update((event) => ({ ...event, state: 'hide' }));
   }
 
+  private _handleRemember(): void {
+    this._lastEventRemembered.set(structuredClone(this._event()));
+  }
 }
