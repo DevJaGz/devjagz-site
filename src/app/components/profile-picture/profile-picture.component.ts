@@ -4,11 +4,12 @@ import { SpokenMessageService } from '@services';
 import { SpokenMessageComponent } from '../spoken-message/spoken-message.component';
 import { NavigationService } from '@services';
 import { URLSpokenMessageService } from '../../services/url-spoken-message.service';
+import { MouseScrollIconComponent } from '../mouse-scroll-icon/mouse-scroll-icon.component';
 
 @Component({
   selector: 'app-profile-picture',
   standalone: true,
-  imports: [CommonModule, SpokenMessageComponent],
+  imports: [CommonModule, SpokenMessageComponent, MouseScrollIconComponent],
   templateUrl: './profile-picture.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })

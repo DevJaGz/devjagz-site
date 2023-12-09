@@ -56,3 +56,12 @@
   to { width: 100%; opacity: 1; }
 }
 
+// Stuff that matters.
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(100px);
+	}
+}
