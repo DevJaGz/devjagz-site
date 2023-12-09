@@ -88,6 +88,15 @@ html, body {
     animation-timeline: view();
     animation-range:  0% cover 35%;
   }
+
+  .--show-spoken-message{
+    animation: showSpokenMessage  0.2s ease-out forwards;
+  }
   
+  .--hide-spoken-message{
+    animation: hideSpokenMessage  0.2s ease-out forwards;
+  }
+
 }
+
 
