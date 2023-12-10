@@ -1,8 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { NavMenuComponent, ProfilePictureComponent } from '@components';
-import { MouseScrollIconComponent } from '../../components/mouse-scroll-icon/mouse-scroll-icon.component';
+import { NavMenuComponent, ProfilePictureComponent, MouseScrollIconComponent } from '@components';
 
 @Component({
   selector: 'app-main-page',

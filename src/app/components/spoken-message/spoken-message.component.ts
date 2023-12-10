@@ -1,16 +1,16 @@
-  import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { SpokenMessageService } from '../../services/spoken-message.service';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReplaceTextAnimationDirective } from '../../directives';
+import { ReplaceTextAnimationDirective } from '@directives';
+import { SpokenMessageService } from '@services';
 
 @Component({
   selector: 'app-spoken-message',
   standalone: true,
   imports: [CommonModule, ReplaceTextAnimationDirective],
   templateUrl: './spoken-message.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SpokenMessageComponent  {
+export class SpokenMessageComponent {
   private readonly _spokenMessageService = inject(SpokenMessageService);
   private _event = this._spokenMessageService.event;
 
@@ -41,6 +41,5 @@ export class SpokenMessageComponent  {
 
   get isInitial(): boolean {
     return this.eventState === 'initial';
-  } 
-
+  }
 }
