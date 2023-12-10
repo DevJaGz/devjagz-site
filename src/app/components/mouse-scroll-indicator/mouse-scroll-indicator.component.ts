@@ -65,7 +65,6 @@ export class MouseScrollIndicatorComponent implements AfterViewInit, OnDestroy {
       const hasScrollbar = scrollHeight  > elementHeight;
       const isScrollbarOnTop = this.scrollElement.scrollTop === 0;
       this.showMouseScrollIcon.set(hasScrollbar && isScrollbarOnTop);
-      console.log('change', this.showMouseScrollIcon());
     }, 0);
   }
 }
