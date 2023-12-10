@@ -135,6 +135,16 @@ html, body {
     typing calc((var(--_rta-number-of-characters) / 20) * 1s) steps(40, end),
   }
 
+  .scroll-indicator{
+    transition: all 0.2s ease;
+    opacity: 0;
+  }
+
+  .scroll-indicator.--show{
+    transition: all 1s ease 1s;
+    opacity: 1;
+  }
+
 }
 
 

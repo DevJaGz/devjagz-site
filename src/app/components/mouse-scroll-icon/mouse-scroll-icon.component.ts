@@ -8,6 +8,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './mouse-scroll-icon.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class MouseScrollIconComponent {
-
-}
+export class MouseScrollIconComponent {}

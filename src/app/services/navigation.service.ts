@@ -10,9 +10,12 @@ export class NavigationService {
   private readonly _location = inject(Location);
   private readonly _router = inject(Router);
 
+  get navigationEndChanges$() {
+    return this._router.events.pipe(filter(event => event instanceof NavigationEnd))
+  }
+
   get urlChanges$(): Observable<string> {
-    return     this._router.events.pipe(
-      filter(event => event instanceof NavigationEnd),
+    return this.navigationEndChanges$.pipe(
       map((v) => v instanceof NavigationEnd ? v.url : '' ),
       startWith(this._location.path())
       )

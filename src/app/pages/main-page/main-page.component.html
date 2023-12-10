@@ -1,5 +1,5 @@
 <div
-  #scrollElementRef 
+  #scrollElement
   class="relative bg-primary-200 dark:bg-primary-900 text-primary-900 0 dark:text-primary-400 h-full min-h-[100svh] overflow-y-auto overflow-x-hidden"
 >
   <div class="h-full max-w-b2xl w-full mx-auto">
@@ -9,14 +9,11 @@
       <div class="flex-1 pb-8">
         <router-outlet></router-outlet>
       </div>
-      <app-profile-picture class="sticky bottom-0" />
-      <app-mouse-scroll-icon
-        *ngIf="showMouseScrollIcon()"
-        class="fixed bottom-6 left-1/2 -translate-x-1/2 translate-y-[200%] sm:translate-y-0 transition-transform animate-fade animate-duration-1000 animate-delay-[2000ms]"
-      />
+      <app-profile-picture class="sticky bottom-0 " />
+      <app-mouse-scroll-indicator [scrollElement]="scrollElement" class="fixed bottom-36 left-1/2 -translate-x-1/2 overflow-hidden" />
     </main>
     <aside
-      class="fixed right-24 top-20 translate-x-52 lg:translate-x-0 nav-limit-query transition-transform duration-150"
+      class="fixed right-24 top-20 translate-x-52 lg:translate-x-0 nav-limit-query transition-transform duration-150 "
     >
       <app-nav-menu />
     </aside>
