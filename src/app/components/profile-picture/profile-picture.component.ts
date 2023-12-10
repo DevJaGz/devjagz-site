@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SpokenMessageService, NavigationService, URLSpokenMessageService } from '@services';
-import { SpokenMessageComponent } from '@components';
+import { SpokenMessageComponent, NavMenuMobileComponent } from '@components';
 
 @Component({
   selector: 'app-profile-picture',
   standalone: true,
-  imports: [CommonModule, SpokenMessageComponent],
+  imports: [CommonModule, SpokenMessageComponent, NavMenuMobileComponent],
   templateUrl: './profile-picture.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })

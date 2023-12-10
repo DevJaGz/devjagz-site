@@ -11,7 +11,7 @@ import { NavMenuComponent, ProfilePictureComponent, MouseScrollIndicatorComponen
     RouterOutlet,
     NavMenuComponent,
     ProfilePictureComponent,
-    MouseScrollIndicatorComponent
+    MouseScrollIndicatorComponent,
   ],
   templateUrl: './main-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
