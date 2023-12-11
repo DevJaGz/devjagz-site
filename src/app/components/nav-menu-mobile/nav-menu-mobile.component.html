@@ -1,12 +1,12 @@
 <nav
-  class="translate-y-0 lg:translate-y-[50vh] h-[74px] sm:h-auto py-2 px-5 sm:px-2 w-[95%] md:w-auto max-w-xl mx-auto bg-primary-800 rounded-tl-[34px] rounded-tr-[34px] sm:rounded-full transition-transform "
+  class="translate-y-0 lg:translate-y-[50vh] h-[74px] sm:h-auto py-2 px-5 sm:px-2 w-[95%] md:w-auto max-w-xl mx-auto bg-primary-300 dark:bg-primary-800 rounded-tl-[34px] rounded-tr-[34px] sm:rounded-full transition-transform "
 >
   <ul
     class="h-full flex items-center justify-between sm:flex-col flex-nowrap gap-4"
   >
     @for (menuItem of menuItems; track $index) {
     <li class="w-14 h-14  rounded-[18px] hover:opacity-80 transition-all">
-      <a href="#" class="text-primary-400 h-full grid place-items-center">
+      <a href="#" class="text-primary-400 dark:text-primary-300 h-full grid place-items-center">
         @defer {
           <app-icon [name]="menuItem.icon" class="w-full h-full" />
         }
