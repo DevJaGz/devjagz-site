@@ -7,7 +7,7 @@
     @for (menuItem of menuItems; track $index) {
     <li class="w-14 h-14 sm:w-8 sm:h-8  rounded-[18px] hover:opacity-80 transition-all">
       @if (menuItem.link) {
-        <a [routerLink]="menuItem.link" routerLinkActive="active" class="text-primary-400  w-full h-full grid place-items-center [&.active]:text-white">
+        <a [routerLink]="menuItem.link" routerLinkActive="active" class="text-primary-400  w-full h-full grid place-items-center [&.active]:text-primary-600 dark:[&.active]:text-white">
           @defer {
             <app-icon [name]="menuItem.icon" class="w-full h-full" />
           }
