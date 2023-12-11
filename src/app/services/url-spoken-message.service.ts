@@ -8,7 +8,7 @@ export class URLSpokenMessageService {
         return 'Who am I?';
       case '/experience':
         return 'My experience!';
-      case '/resume':
+      case '/cv':
         return 'Download it!';
       case '/contact':
         return 'Let\'s talk!';

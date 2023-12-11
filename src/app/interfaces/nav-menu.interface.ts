@@ -2,7 +2,8 @@ import { ICONS } from '@constants';
 
 export interface NavMenuItem {
   label?: string;
-  onAction?: (params: unknown) => void;
+  onAction?: (params?: unknown) => void;
+  link?: string;
   icon?: keyof typeof ICONS;
 }
 

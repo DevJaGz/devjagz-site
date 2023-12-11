@@ -6,11 +6,20 @@
   >
     @for (menuItem of menuItems; track $index) {
     <li class="w-14 h-14 sm:w-8 sm:h-8  rounded-[18px] hover:opacity-80 transition-all">
-      <a href="#" class="text-primary-400 dark:text-primary-300 h-full grid place-items-center">
-        @defer {
-          <app-icon [name]="menuItem.icon" class="w-full h-full" />
-        }
-      </a>
+      @if (menuItem.link) {
+        <a [routerLink]="menuItem.link" routerLinkActive="active" class="text-primary-400  w-full h-full grid place-items-center [&.active]:text-white">
+          @defer {
+            <app-icon [name]="menuItem.icon" class="w-full h-full" />
+          }
+        </a>
+      }
+      @else {
+        <button (click)="menuItem.onAction && menuItem.onAction()" class="text-primary-400  w-full h-full grid place-items-center">
+          @defer {
+            <app-icon [name]="menuItem.icon" class="w-full h-full" />
+          }
+        </button>
+      }
     </li>
     }
   </ul>
