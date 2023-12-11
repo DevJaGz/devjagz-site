@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        'md': '980px',
         'lg': '1164px',
       },
       minWidth:{

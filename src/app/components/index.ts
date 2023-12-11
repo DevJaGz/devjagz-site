@@ -1,3 +1,4 @@
+export * from './icon/icon.component';
 export * from './nav-menu/nav-menu.component';
 export * from './nav-menu-mobile/nav-menu-mobile.component';
 export * from './spoken-message/spoken-message.component';

@@ -1,9 +1,17 @@
-<nav class="translate-y-0 lg:translate-y-[74px] h-[74px]  bg-primary-800 rounded-tl-[34px] rounded-tr-[34px] transition-transform py-2 px-5">
- <ul class="border border-purple-50 h-full flex items-center justify-between flex-nowrap">
-  <li class="w-14 h-14 border border-primary-400 rounded-[18px]">
-    <a href="#" class="text-green-400 h-full grid place-items-center" >
-        works!
-    </a>
-  </li>
- </ul>
+<nav
+  class="translate-y-0 lg:translate-y-[50vh] h-[74px] sm:h-auto py-2 px-5 sm:px-2 w-[95%] md:w-auto max-w-xl mx-auto bg-primary-800 rounded-tl-[34px] rounded-tr-[34px] sm:rounded-full transition-transform "
+>
+  <ul
+    class="h-full flex items-center justify-between sm:flex-col flex-nowrap gap-4"
+  >
+    @for (menuItem of menuItems; track $index) {
+    <li class="w-14 h-14  rounded-[18px] hover:opacity-80 transition-all">
+      <a href="#" class="text-primary-400 h-full grid place-items-center">
+        @defer {
+          <app-icon [name]="menuItem.icon" class="w-full h-full" />
+        }
+      </a>
+    </li>
+    }
+  </ul>
 </nav>
