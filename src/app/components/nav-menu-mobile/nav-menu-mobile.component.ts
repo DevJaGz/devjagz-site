@@ -15,17 +15,17 @@ export class NavMenuMobileComponent {
       icon: 'SquareRoundedPlus'
     },
     {
-      icon: 'UserSquareRounded'
+      icon: 'Message2Plus'
+    },
+    {
+      icon: 'Cv'
+    },
+    {
+      icon: 'InfoSquareRounded'
     },
     {
       icon: 'UserSquareRounded'
-    },
-    {
-      icon: 'UserSquareRounded'
-    },
-    {
-      icon: 'UserSquareRounded'
-    },
+    }
   ]
 
 }
