@@ -15,7 +15,9 @@
     <aside
       class="fixed right-24 top-20 translate-x-52 lg:translate-x-0 nav-limit-query transition-transform duration-150 "
     >
-      <app-nav-menu />
+      @defer {
+        <app-nav-menu />
+      }
     </aside>
   </div>
 </div>

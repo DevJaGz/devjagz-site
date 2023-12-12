@@ -1,5 +1,12 @@
 <nav class="nav-menu animate-fade-left">
-  <ul>
+  <ul #MenuItemsRef >
+    <div class="fixed bg-primary-300 dark:bg-primary-700 rounded-lg duration-500 z-0" style="
+      transition: var(--_transition-hover);
+      width: var(--_w-hover); 
+      height: var(--_h-hover); 
+      top: var(--_top-hover, 0); 
+      left: var(--_left-hover, 0)" 
+      ></div>
     <li>
       <a routerLink="/who-am-i" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Who am i</a>
     </li>

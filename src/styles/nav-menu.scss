@@ -1,17 +1,19 @@
 nav.nav-menu {
+  @apply overflow-hidden;
+
   ul{
-    @apply  flex flex-col gap-4 text-center;
+    @apply flex flex-col items-center  text-center ;
   }
 
-  a {
-    @apply text-primary-500 dark:text-gray-400 transition-colors select-none;
+  li {
+    @apply p-2 text-primary-500 dark:text-gray-400 transition-colors select-none w-fit z-10;
   }
 
-  a.active {
+  li a.active {
     @apply  text-primary-500 font-bold dark:font-normal dark:text-primary-200 cursor-default;
   }
 
-  a:not(.active) {
-    @apply cursor-pointer hover:opacity-80;
+  li a:not(.active) {
+    @apply cursor-pointer;
   }
 }
