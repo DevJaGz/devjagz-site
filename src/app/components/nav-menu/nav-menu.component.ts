@@ -58,6 +58,7 @@ export class NavMenuComponent implements AfterViewInit, OnDestroy {
     if (aElement?.classList.contains('active')) {
       return;
     }
+    this._renderer.setStyle(this.MenuItemsRef.nativeElement, '--_opacity-hover', `100%`, RendererStyleFlags2.DashCase);
     this._renderer.setStyle(this.MenuItemsRef.nativeElement, '--_w-hover', `${width}px`, RendererStyleFlags2.DashCase);
     this._renderer.setStyle(this.MenuItemsRef.nativeElement, '--_h-hover', `${height}px`, RendererStyleFlags2.DashCase);
     this._renderer.setStyle(this.MenuItemsRef.nativeElement, '--_top-hover', `${top}px`, RendererStyleFlags2.DashCase);
@@ -65,7 +66,7 @@ export class NavMenuComponent implements AfterViewInit, OnDestroy {
   }
 
   private _hideHoverHandler(): void {
-    this._renderer.setStyle(this.MenuItemsRef.nativeElement, '--_left-hover', `${200}%`, RendererStyleFlags2.DashCase);
+    this._renderer.setStyle(this.MenuItemsRef.nativeElement, '--_opacity-hover', `0%`, RendererStyleFlags2.DashCase);
   }
 
 
