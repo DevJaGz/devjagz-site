@@ -1,14 +1,29 @@
-<a
+@defer (on viewport) {
+    <a
+      class="group relative transform hover:scale-[1.025] hover:contrast-150 block {{
+        index % 2 === 0 ? 'animate-fade-down' : 'animate-fade-up'
+      }} animate-delay-[{{ index * 100 }}ms]"
+    >
+      <article
+        class="border-2 border-primary-700 rounded-lg relative min-h-[250px] h-full"
+      >
+        <h3 class="text-right p-2">Alquiler Protegido</h3>
+        <img
+          class="object-contain rounded-lg absolute left-0 top-0 w-full h-full p-3"
+          src="https://landing.alquilerprotegido.es/wp-content/uploads/2023/04/logo-AP.jpg"
+          alt="Challenge's image"
+        />
+      </article>
+    </a>
+} @placeholder { 
+  <a
   class="group relative transform hover:scale-[1.025] hover:contrast-150 block"
 >
   <article
-    class="border-2 border-primary-700 rounded-lg relative min-h-[250px] h-full"
+    class="rounded-lg relative min-h-[250px] h-full"
   >
-    <h3 class="text-right p-2 ">Alquiler Protegido</h3>
-    <img
-      class="object-contain rounded-lg absolute left-0 top-0 w-full h-full p-3"
-      src="https://landing.alquilerprotegido.es/wp-content/uploads/2023/04/logo-AP.jpg"
-      alt="Challenge's image"
-    />
+    <h3 class="text-right p-2"></h3>
+    <div class="absolute left-0 top-0 w-full h-full"></div>
   </article>
 </a>
+}
