@@ -9,5 +9,33 @@ import { ExperienceCardComponent } from '../experience-card/experience-card.comp
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ExperienceCardsComponent {
-
+  objs = [
+    {
+      colSpan: 2,
+    },
+    {
+      colSpan: 1,
+    },
+    {
+      colSpan: 1,
+    },
+    {
+      rowSpan: 2,
+    },
+    {
+      colSpan: 1,
+    },
+    {
+      colSpan: 1,
+    },
+    {
+      colSpan: 1,
+    },
+    {
+      colSpan: 2,
+    },
+    {
+      colSpan: 1,
+    },
+  ]
 }
