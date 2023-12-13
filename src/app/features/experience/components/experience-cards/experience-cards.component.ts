@@ -11,31 +11,31 @@ import { ExperienceCardComponent } from '../experience-card/experience-card.comp
 export class ExperienceCardsComponent {
   objs = [
     {
-      colSpan: 2,
+      colSpan2: true,
     },
     {
-      colSpan: 1,
+      colSpan2: false,
     },
     {
-      colSpan: 1,
+      colSpan2: false,
     },
     {
-      rowSpan: 2,
+      rowSpan2: true,
     },
     {
-      colSpan: 1,
+      colSpan2: true,
     },
     {
-      colSpan: 1,
+      colSpan2: false,
     },
     {
-      colSpan: 1,
+      colSpan2: true,
     },
     {
-      colSpan: 2,
+      colSpan2: true,
     },
     {
-      colSpan: 1,
+      colSpan2: true,
     },
   ]
 }
