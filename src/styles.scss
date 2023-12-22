@@ -136,13 +136,15 @@ html, body {
   }
 
   .scroll-indicator{
-    transition: all 0.2s ease;
+    transition: opacity 0.2s ease;
     opacity: 0;
+    position: absolute;
   }
 
   .scroll-indicator.--show{
-    transition: all 1s ease 5s;
+    transition: opacity 1s ease 5s;
     opacity: 1;
+    position: relative;
   }
 
 }
