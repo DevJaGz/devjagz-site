@@ -75,10 +75,15 @@ html, body {
     @apply text-zinc-600 dark:text-zinc-300 font-semibold dark:font-normal
   }
 
-  .nav-limit-query{
+  .fixed-right-query{
     @media screen and (min-width: 1536px) {
-      right: calc((100vw - 1536px) / 2) !important;
-      @apply pr-24
+      right: calc(((100svw - 1536px) / 2) + 6rem) !important;
+    }
+  }
+
+  .fixed-left-query{
+    @media screen and (min-width: 1536px) {
+      left: calc(((100svw - 1536px) / 2) + 6rem) !important;
     }
   }
 
